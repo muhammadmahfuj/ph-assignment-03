@@ -69,8 +69,11 @@
   <body class="manrope">
     <!-- header -->
     <!-- navbar -->
-    <div class="navbar max-w-[1170px] m-auto mt-[50px]">
-      <div class="navbar-start">
+    <header
+      class="navbar max-w-[1170px] flex items-center justify-between mx-auto mt-[50px]"
+    >
+      <!-- navbar logo -->
+      <section>
         <a class="btn btn-ghost text-[32px]"
           ><i
             class="fa-duotone fa-solid fa-circle-arrow-up-right fa-lg"
@@ -82,8 +85,10 @@
           ></i
           >Rinterio</a
         >
-      </div>
-      <div class="navbar-center hidden lg:flex lg:mr-[130px]">
+      </section>
+
+      <!-- navbar mid/pages -->
+      <section class="hidden lg:flex">
         <ul class="menu menu-horizontal px-1 font-normal text-[16px]">
           <li>
             <a class="font-bold" href="#">Home</a>
@@ -101,55 +106,64 @@
             <a href="#">Contact Us</a>
           </li>
         </ul>
-      </div>
-      <div class="navbar-end gap-[15px]">
-        <button class="btn btn-circle bg-white">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-        </button>
-        <button class="btn btn-circle bg-white">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-            />
-          </svg>
-        </button>
-        <a
-          class="btn bg-[#ABEF5F] font-extrabold text-[20px] rounded-[30px] px-[20px] py-[15px]"
-          >Book Consult
+      </section>
 
-          <i
-            class="fa-duotone fa-solid fa-circle-arrow-up-right fa-lg"
-            style="
-              --fa-primary-color: #ffffff;
-              --fa-secondary-color: #000000;
-              --fa-secondary-opacity: 1;
-            "
-          ></i>
-        </a>
+      <!-- navbar end -->
+      <div class="md:flex gap-5">
+        <div class="hidden gap-4 md:flex lg:flex">
+          <button class="btn btn-circle bg-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-circle bg-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+          </button>
+          <a
+            class="btn bg-[#ABEF5F] font-extrabold text-[20px] rounded-[30px] px-[20px] py-[15px]"
+            >Book Consult
+
+            <i
+              class="fa-duotone fa-solid fa-circle-arrow-up-right fa-lg"
+              style="
+                --fa-primary-color: #ffffff;
+                --fa-secondary-color: #000000;
+                --fa-secondary-opacity: 1;
+              "
+            ></i>
+          </a>
+        </div>
+        <div>
+          <button class="btn btn-circle bg-white flex md:flex lg:hidden">
+            <i class="fa-light fa-bars" style="color: #737373"></i>
+          </button>
+        </div>
       </div>
-    </div>
+    </header>
     <!-- hero -->
     <div
       class="hero bg-[#FFFFFF] max-h-[710px] max-w-[1170px] mx-auto mt-[50px] mb-[100px]"
@@ -250,6 +264,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Stats -->
     <!-- footer -->
   </body>
 </html>
